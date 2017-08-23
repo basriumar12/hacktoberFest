@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#0091EA"
+        >
+
+        <Button
+            android:text="Masuk "
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#76ff03"
+            android:id="@+id/button2"
+            android:onClick="loginMasuk"
+            android:textStyle="normal|bold"/>
+        />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edittext_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Passwordnya : Password"
+        android:inputType="textCapWords"
+        style="@style/AppTheme"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        android:fontFamily="monospace"/>
+
+    <EditText
+        android:id="@+id/edittext_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usernamenya : Username"
+        android:inputType="textCapWords"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:fontFamily="monospace"
+        android:layout_above="@+id/edittext_password"
+       />
+
+    <TextView
+        android:text="Login User"
+        android:textColor="#fff"
+        android:background="#76ff03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textStyle="normal|bold"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:layout_marginTop="52dp"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgflag"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:src="@drawable/temp_img"
+
+        />
+    <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="3dp"
+           android:layout_marginBottom="3dp"
+           android:layout_marginLeft="4dp"
+           android:layout_marginRight="4dp"
+
+           android:background="@color/colorPrimary">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+<TextView
+    android:id="@+id/labeljudul"
+    android:textColor="@color/colorAccent"
+    android:textSize="15dp"
+    android:text="Nama Wisata :"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@id/labeljudul"
+            android:text="judul"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:id="@+id/judulSi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+           </RelativeLayout>
+       </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<TextView
+    android:text="Alamat Wisata :"
+    android:textSize="15dp"
+    android:textColor="@color/colorAccent"
+    android:id="@+id/labelalamat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+        <TextView
+        android:text="alamat"
+            android:layout_below="@id/labelalamat"
+            android:id="@+id/alamatSi"
+            android:textSize="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/labeldetail"
+        android:text="Detail Wisata :"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@id/labeldetail"
+            android:text="detail"
+            android:id="@+id/detailSi"
+           android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+         />
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+   </ScrollView>
+</LinearLayout>
