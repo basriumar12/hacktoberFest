@@ -32,7 +32,7 @@ public class Splash extends AppCompatActivity {
         Thread timerTread = new Thread() {
             public void run() {
                 try {
-                    sleep(3000);
+                    sleep(10000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } finally {
@@ -45,7 +45,7 @@ public class Splash extends AppCompatActivity {
         };
         timerTread.start();
     }
-
+    //cek internet
     public boolean isWorkingInternetPersent() {
         ConnectivityManager connectivityManager = (ConnectivityManager) getBaseContext()
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -76,7 +76,7 @@ public class Splash extends AppCompatActivity {
         // Setting OK Button
         alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-
+                //exit app
                 finish();
                 System.exit(0);
             }
