@@ -105,7 +105,7 @@ public class ListWisata extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
-
+        finish();
 
     }
 }
