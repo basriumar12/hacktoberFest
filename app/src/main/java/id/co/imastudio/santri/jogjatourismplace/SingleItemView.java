@@ -52,6 +52,8 @@ public class SingleItemView extends AppCompatActivity {
         detailSi.setText(detail);
 
         imageLoader.DisplayImage(gambar, imgflag);
+        // get position
+        imageLoader.DisplayImage(gambar, position);
     }
 
     @Override
